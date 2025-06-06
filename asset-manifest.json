@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/HEFMA/static/css/main.bd15c1c4.css",
+    "main.js": "/HEFMA/static/js/main.cedf4621.js",
+    "static/js/488.b49a8fda.chunk.js": "/HEFMA/static/js/488.b49a8fda.chunk.js",
+    "service-worker.js": "/HEFMA/service-worker.js",
+    "index.html": "/HEFMA/index.html",
+    "main.bd15c1c4.css.map": "/HEFMA/static/css/main.bd15c1c4.css.map",
+    "main.cedf4621.js.map": "/HEFMA/static/js/main.cedf4621.js.map",
+    "488.b49a8fda.chunk.js.map": "/HEFMA/static/js/488.b49a8fda.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bd15c1c4.css",
+    "static/js/main.cedf4621.js"
+  ]
+}
