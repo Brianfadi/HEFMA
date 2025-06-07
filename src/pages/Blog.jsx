@@ -42,17 +42,17 @@ const Blog = () => (
         <li className="bg-white shadow rounded-lg p-4">
           <div className="font-bold text-lg">Facility Management</div>
           <div className="text-blue-600 text-sm">Explore the latest trends and insights in facility management.</div>
-          <a href="#" className="text-blue-700 underline">View All</a>
+          <a href="/blog" className="text-blue-700 underline">View All</a>
         </li>
         <li className="bg-white shadow rounded-lg p-4">
           <div className="font-bold text-lg">Sustainability</div>
           <div className="text-blue-600 text-sm">Learn how to reduce your environmental impact and improve sustainability.</div>
-          <a href="#" className="text-blue-700 underline">View All</a>
+          <a href="/blog" className="text-blue-700 underline">View All</a>
         </li>
         <li className="bg-white shadow rounded-lg p-4">
           <div className="font-bold text-lg">Technology</div>
           <div className="text-blue-600 text-sm">Discover the latest technology trends and innovations in facility management.</div>
-          <a href="#" className="text-blue-700 underline">View All</a>
+          <a href="/blog" className="text-blue-700 underline">View All</a>
         </li>
       </ul>
     </section>

@@ -30,9 +30,9 @@ const Contact = () => (
     <div className="mt-8">
       <h2 className="text-2xl font-bold mb-4">Quick Links</h2>
       <ul>
-        <li><a href="#" className="text-blue-700 underline">Link 1</a></li>
-        <li><a href="#" className="text-blue-700 underline">Link 2</a></li>
-        <li><a href="#" className="text-blue-700 underline">Link 3</a></li>
+        <li><a href="/events" className="text-blue-700 underline">Events</a></li>
+        <li><a href="/about" className="text-blue-700 underline">About</a></li>
+        <li><a href="/membership" className="text-blue-700 underline">Membership</a></li>
       </ul>
     </div>
     <div className="mt-8">

@@ -8,10 +8,10 @@ const Footer = () => (
           <span className="font-semibold text-green-700">&copy; {new Date().getFullYear()} HEFMA</span> | All rights reserved.
         </div>
         <div className="space-x-4">
-          <a href="#" className="hover:text-green-700">Facebook</a>
-          <a href="#" className="hover:text-green-700">Instagram</a>
-          <a href="#" className="hover:text-green-700">LinkedIn</a>
-          <a href="#" className="hover:text-green-700">X</a>
+          <a href="https://facebook.com/hefma" className="hover:text-green-700" target="_blank" rel="noopener noreferrer">Facebook</a>
+          <a href="https://instagram.com/hefma" className="hover:text-green-700" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="https://linkedin.com/company/hefma" className="hover:text-green-700" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="https://x.com/hefma" className="hover:text-green-700" target="_blank" rel="noopener noreferrer">X</a>
         </div>
       </div>
     </div>
