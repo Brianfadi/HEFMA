@@ -1,15 +1,16 @@
 import React, { useState } from "react";
+import logo from '../assets/logo.png';
 import { Link } from "react-router-dom";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="bg-white shadow-md sticky top-0 z-50">
+    <header className="bg-blue-900 shadow-md sticky top-0 z-50">
       <div className="max-w-7xl mx-auto flex items-center justify-between px-4 py-3">
         <div className="flex items-center space-x-2">
-          <img src="/logo192.png" alt="HEFMA Logo" className="h-10 w-10" />
-          <span className="font-bold text-xl text-green-700">HEFMA</span>
+          <img src={logo} alt="HEFMA Logo" className="h-10 w-auto object-contain" />
+          <span className="font-bold text-2xl text-blue-700 ml-2">HEFMA</span>
         </div>
         {/* Desktop Nav */}
         <nav className="space-x-6 hidden md:block">
