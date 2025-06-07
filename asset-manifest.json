@@ -1,16 +1,21 @@
 {
   "files": {
-    "main.css": "/HEFMA/static/css/main.bd15c1c4.css",
-    "main.js": "/HEFMA/static/js/main.cedf4621.js",
+    "main.css": "/HEFMA/static/css/main.1c3e2064.css",
+    "main.js": "/HEFMA/static/js/main.ff7bf5ad.js",
     "static/js/488.b49a8fda.chunk.js": "/HEFMA/static/js/488.b49a8fda.chunk.js",
+    "static/media/logo.png": "/HEFMA/static/media/logo.ff3c83c1804133c285c5.png",
+    "static/media/image1.jpg": "/HEFMA/static/media/image1.56d0c064bcaddf55458e.jpg",
+    "static/media/image4.jpg": "/HEFMA/static/media/image4.a35180d7440b80aad345.jpg",
+    "static/media/image2.jpg": "/HEFMA/static/media/image2.b458435f00fb0c8e52c4.jpg",
+    "static/media/image3.jpg": "/HEFMA/static/media/image3.2fbb6aaaf49e313cd439.jpg",
     "service-worker.js": "/HEFMA/service-worker.js",
     "index.html": "/HEFMA/index.html",
-    "main.bd15c1c4.css.map": "/HEFMA/static/css/main.bd15c1c4.css.map",
-    "main.cedf4621.js.map": "/HEFMA/static/js/main.cedf4621.js.map",
+    "main.1c3e2064.css.map": "/HEFMA/static/css/main.1c3e2064.css.map",
+    "main.ff7bf5ad.js.map": "/HEFMA/static/js/main.ff7bf5ad.js.map",
     "488.b49a8fda.chunk.js.map": "/HEFMA/static/js/488.b49a8fda.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bd15c1c4.css",
-    "static/js/main.cedf4621.js"
+    "static/css/main.1c3e2064.css",
+    "static/js/main.ff7bf5ad.js"
   ]
 }
