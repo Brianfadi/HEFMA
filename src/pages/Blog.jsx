@@ -1,8 +1,83 @@
 import React from "react";
+import image9 from '../assets/image9.jpg';
 
-const Blog = () => (
-  <main className="max-w-4xl mx-auto py-12 px-4">
-    <h1 className="text-3xl font-bold mb-6 text-blue-700">Blog & Updates</h1>
+const Blog = () => {
+  return (
+    <>
+      <section
+      className="relative text-white py-16 px-4 text-center overflow-hidden"
+      style={{
+        backgroundImage: `url(${image9})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+      }}
+    >
+      <div className="absolute inset-0 bg-black bg-opacity-40 pointer-events-none" aria-hidden="true"></div>
+      <div className="relative z-10">
+        <h1 className="text-4xl font-bold mb-4">News & Insights</h1>
+        <p className="max-w-2xl mx-auto text-lg mb-6">
+          Stay updated with the latest industry news, HEFMA updates, member spotlights, and announcements in hospitality engineering and facilities management.
+        </p>
+      </div>
+    </section>
+  <main className="max-w-5xl mx-auto py-12 px-4">
+    {/* Industry News */}
+    <section className="mb-10">
+      <h2 className="text-2xl font-bold text-blue-700 mb-4">Industry News</h2>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="bg-white rounded-lg shadow p-4">
+          <div className="font-bold mb-1">Sustainable Facility Design Trends in 2025</div>
+          <div className="text-gray-600 mb-2">Green building and energy efficiency take center stage in new hospitality projects.</div>
+          <a href="#" className="text-blue-700 underline">Read More</a>
+        </div>
+        <div className="bg-white rounded-lg shadow p-4">
+          <div className="font-bold mb-1">HEFMA Joins Global FM Alliance</div>
+          <div className="text-gray-600 mb-2">HEFMA partners with international FM bodies to promote standards and collaboration.</div>
+          <a href="#" className="text-blue-700 underline">Read More</a>
+        </div>
+      </div>
+    </section>
+
+    {/* HEFMA Updates */}
+    <section className="mb-10">
+      <h2 className="text-2xl font-bold text-blue-700 mb-4">HEFMA Updates</h2>
+      <ul className="space-y-3">
+        <li className="bg-blue-50 rounded p-4">New member portal launching Q3 2025 with enhanced features.</li>
+        <li className="bg-blue-50 rounded p-4">2025 Annual Conference registrations now open.</li>
+      </ul>
+    </section>
+
+    {/* Member Spotlights */}
+    <section className="mb-10">
+      <h2 className="text-2xl font-bold text-blue-700 mb-4">Member Spotlights</h2>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="bg-green-50 rounded-lg shadow p-4">
+          <div className="font-bold mb-1">Jane Doe, Facility Manager of the Year</div>
+          <div className="text-gray-600 mb-2">Recognized for her innovative approach to sustainable operations at Grand Hotel.</div>
+        </div>
+        <div className="bg-green-50 rounded-lg shadow p-4">
+          <div className="font-bold mb-1">Alex Lee, Rising Star</div>
+          <div className="text-gray-600 mb-2">Awarded for outstanding contributions to HEFMA community projects.</div>
+        </div>
+      </div>
+    </section>
+
+    {/* Announcements */}
+    <section className="mb-10">
+      <h2 className="text-2xl font-bold text-blue-700 mb-4">Announcements</h2>
+      <ul className="list-disc list-inside text-gray-700 space-y-2">
+        <li>Call for speakers: Submit your proposal for the 2025 Conference.</li>
+        <li>Submit your news, articles, or spotlights to be featured here!</li>
+      </ul>
+    </section>
+
+    {/* Call to Action Buttons */}
+    <div className="flex flex-wrap gap-4 mt-8 justify-center">
+      <a href="#" className="bg-green-700 text-white px-6 py-3 rounded font-semibold shadow hover:bg-green-800 transition">Submit News or Article</a>
+      <a href="#" className="bg-blue-700 text-white px-6 py-3 rounded font-semibold shadow hover:bg-blue-800 transition">View All Updates</a>
+    </div>
+
     <section className="mb-8">
       <h2 className="text-2xl font-semibold mb-3">Recent Posts</h2>
       <ul className="space-y-4">
@@ -57,6 +132,8 @@ const Blog = () => (
       </ul>
     </section>
   </main>
-);
+    </>
+  );
+}
 
 export default Blog;

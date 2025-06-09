@@ -1,7 +1,13 @@
 import React from "react";
+import image9 from '../assets/image9.jpg';
 
 const AdminLogin = () => (
-  <main className="flex items-center justify-center min-h-[60vh] py-12 px-4">
+  <main className="flex items-center justify-center min-h-[60vh] py-12 px-4" style={{
+    backgroundImage: `url(${image9})`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat',
+  }} >
     <form className="bg-white shadow rounded-lg p-8 w-full max-w-md">
       <h1 className="text-2xl font-bold mb-6 text-green-700 text-center">Admin Login</h1>
       <div className="mb-4">

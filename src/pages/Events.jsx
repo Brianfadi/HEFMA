@@ -1,22 +1,36 @@
 import React from "react";
 
-import image4 from '../assets/image4.jpg';
+import image9 from '../assets/image9.jpg';
+import image14 from '../assets/image14.jpg';
 
 const Events = () => (
   <>
     <section
       className="relative text-white py-16 px-4 text-center overflow-hidden"
       style={{
-        backgroundImage: `url(${image4})`,
+        backgroundImage: `url(${image9})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat'
       }}
     >
     </section>
-    <main className="max-w-4xl mx-auto py-12 px-4">
-      <h1 className="text-3xl font-bold mb-6 text-blue-700">Events & News</h1>
-      <section className="mb-8">
+    <main className="max-w-5xl mx-auto py-12 px-4">
+      <h1 className="text-3xl font-bold mb-6 text-blue-700">Events & Programs</h1>
+
+      {/* Annual Conference & Expo */}
+      <section className="mb-10">
+        <h2 className="text-2xl font-semibold mb-3">Annual HEFMA Conference & Expo</h2>
+        <div className="bg-blue-50 rounded-lg shadow p-6 mb-4">
+          <div className="font-bold text-lg">HEFMA Annual Conference & Expo 2025</div>
+          <div className="text-gray-600 mb-2">September 10-12, 2025 &bull; Nairobi</div>
+          <div className="text-blue-700 mb-2">The premier event bringing together hospitality engineers, facility managers, and industry leaders for networking, education, and innovation.</div>
+          <a href="#" className="inline-block bg-blue-700 text-white px-5 py-2 rounded font-semibold shadow hover:bg-blue-800 transition">View Conference Details</a>
+        </div>
+      </section>
+
+      {/* Upcoming Events */}
+      <section className="mb-10">
         <h2 className="text-2xl font-semibold mb-3">Upcoming Events</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           <div className="bg-white shadow rounded-lg p-4">
@@ -36,6 +50,56 @@ const Events = () => (
           </div>
         </div>
       </section>
+
+      {/* Past Events */}
+      <section className="mb-10">
+        <h2 className="text-2xl font-semibold mb-3">Past Events</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="bg-gray-50 rounded-lg shadow p-4">
+            <div className="font-bold">2024 Regional Workshop</div>
+            <div className="text-gray-600 mb-2">March 2024 &bull; Mombasa</div>
+            <div className="text-blue-700 mb-2">Hands-on training and technical sessions for facility managers and engineers.</div>
+            <a href="#" className="text-blue-700 underline">View Photos & Summary</a>
+          </div>
+          <div className="bg-gray-50 rounded-lg shadow p-4">
+            <div className="font-bold">2023 Sustainability Seminar</div>
+            <div className="text-gray-600 mb-2">October 2023 &bull; Nairobi</div>
+            <div className="text-blue-700 mb-2">Focused on energy, water, and waste management in hospitality facilities.</div>
+            <a href="#" className="text-blue-700 underline">View Presentations</a>
+          </div>
+        </div>
+      </section>
+
+      {/* Workshops & CPD Programs */}
+      <section className="mb-10">
+        <h2 className="text-2xl font-semibold mb-3">Workshops & CPD Programs</h2>
+        <ul className="list-disc list-inside text-gray-700 space-y-2 mb-4">
+          <li>Skill-based volunteering opportunities</li>
+          <li>Technical skills workshops</li>
+          <li>Community outreach programs</li>
+        </ul>
+      </section>
+
+      {/* Regional Workshops & Seminars, Facility Tours, Webinars */}
+      <section className="mb-10">
+        <h2 className="text-2xl font-semibold mb-3">Regional Workshops, Facility Tours & Webinars</h2>
+        <ul className="list-disc list-inside text-gray-700 space-y-2 mb-4">
+          <li>Regional workshops and seminars on current topics</li>
+          <li>Facility tours and technical trainings</li>
+          <li>Webinars and virtual roundtables with industry leaders</li>
+        </ul>
+      </section>
+
+      {/* Calendar Placeholder */}
+      <section className="mb-10">
+        <h2 className="text-2xl font-semibold mb-3">Events Calendar</h2>
+        <div className="bg-gray-100 rounded-lg p-6 text-center text-gray-600">[Calendar with filters for event type and location coming soon]</div>
+      </section>
+
+      <div className="flex justify-center mt-8">
+        <a href="#" className="bg-green-700 text-white px-8 py-3 rounded font-semibold shadow hover:bg-green-800 transition">View Upcoming Events</a>
+      </div>
+
       <section className="max-w-4xl mx-auto mb-12">
         <h2 className="text-2xl font-bold text-blue-700 mb-6">Upcoming Events</h2>
         <ul className="space-y-4">

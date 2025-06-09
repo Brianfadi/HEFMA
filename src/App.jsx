@@ -10,6 +10,11 @@ import Publications from "./pages/Publications";
 import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
 import AdminLogin from "./pages/AdminLogin";
+import Governance from "./pages/Governance";
+import Advocacy from "./pages/Advocacy";
+import Community from "./pages/Community";
+import Partners from "./pages/Partners";
+import MemberPortal from "./pages/MemberPortal";
 
 const App = () => (
   <Router>
@@ -24,6 +29,11 @@ const App = () => (
         <Route path="/blog" element={<Blog />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/admin" element={<AdminLogin />} />
+        <Route path="/governance" element={<Governance />} />
+        <Route path="/advocacy" element={<Advocacy />} />
+        <Route path="/community" element={<Community />} />
+        <Route path="/partners" element={<Partners />} />
+        <Route path="/memberportal" element={<MemberPortal />} />
       </Routes>
     </div>
     <Footer />

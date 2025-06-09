@@ -1,10 +1,10 @@
 import React from "react";
-import image1 from '../assets/image1.jpg';
+import image10 from '../assets/image10.jpg';
 import image2 from '../assets/image2.jpg';
 import image3 from '../assets/image3.jpg';
 import image4 from '../assets/image4.jpg';
 
-console.log('image1:', image1);
+console.log('image10:', image10);
 console.log('image2:', image2);
 console.log('image3:', image3);
 
@@ -15,7 +15,7 @@ const Home = () => {
       <section
         className="relative text-white py-16 px-4 text-center overflow-hidden"
         style={{
-          backgroundImage: `url(${image1})`,
+          backgroundImage: `url(${image10})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',
@@ -26,12 +26,16 @@ const Home = () => {
       <div className="relative z-10">
 
 
-      <h1 className="text-4xl md:text-5xl font-bold mb-4">Welcome to HEFMA</h1>
-      <p className="max-w-2xl mx-auto text-lg md:text-xl mb-6">
-        The official hub for Hospitality Engineers and Facility Managers Association. 
-        Promoting excellence, knowledge sharing, and industry leadership.
+      <h1 className="text-4xl md:text-5xl font-bold mb-4">HEFMA - Hospitality Engineers & Facilities Management Association</h1>
+      <p className="max-w-2xl mx-auto text-lg md:text-xl mb-4">
+        Welcome to HEFMA, the registered professional association representing members across the hospitality and facilities management sectors. We bring together engineers, facility managers, hotel and hospitality operations experts, and service providers under one collaborative network to promote standards, education, innovation, and excellence in the built environment and hospitality infrastructure.
       </p>
-      <a href="#membership" className="inline-block bg-white text-blue-700 px-6 py-2 rounded font-semibold shadow hover:bg-blue-500 transition">Join Now</a>
+      <div className="text-2xl md:text-3xl font-semibold italic text-green-300 mb-8">Connecting Expertise. Driving Excellence & Sustainable Solutions</div>
+      <div className="flex flex-col md:flex-row justify-center gap-4">
+        <a href="/events" className="inline-block bg-green-700 text-white px-6 py-3 rounded font-semibold shadow hover:bg-green-800 transition">Events</a>
+        <a href="/membership" className="inline-block bg-blue-700 text-white px-6 py-3 rounded font-semibold shadow hover:bg-blue-800 transition">Membership</a>
+        <a href="/blog" className="inline-block bg-gray-900 text-white px-6 py-3 rounded font-semibold shadow hover:bg-gray-800 transition">Latest Updates</a>
+      </div>
       </div>
     </section>
 
@@ -131,7 +135,7 @@ const Home = () => {
     <section
       className="relative py-12"
       style={{
-        backgroundImage: `url(${require('../assets/image4.jpg')})`,
+        backgroundImage: `url(${image10})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',

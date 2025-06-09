@@ -1,12 +1,43 @@
 import React from "react";
+import image9 from '../assets/image9.jpg';
+import image3 from '../assets/image3.jpg';
+import image4 from '../assets/image4.jpg';
+import image5 from '../assets/image5.jpg';
 
-const Publications = () => (
-  <main className="max-w-4xl mx-auto py-12 px-4">
-    <h1 className="text-3xl font-bold mb-6 text-blue-700">Publications & Resources</h1>
-    <section className="mb-8">
-      <h2 className="text-2xl font-semibold mb-3">Featured Publications</h2>
-      <ul className="space-y-4">
-        {/* Example publication card */}
+const Publications = () => {
+  return (
+    <>
+      <section
+      className="relative text-white py-16 px-4 text-center overflow-hidden"
+      style={{
+        backgroundImage: `url(${image9})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+      }}
+    >
+      <div className="absolute inset-0 bg-black bg-opacity-40 pointer-events-none" aria-hidden="true"></div>
+      <div className="relative z-10">
+        <h1 className="text-4xl font-bold mb-4">Knowledge Hub & Resources</h1>
+        <p className="max-w-2xl mx-auto text-lg mb-6">
+          Access guidelines, technical resources, articles, and best practices for hospitality engineering and facilities management professionals.
+        </p>
+      </div>
+    </section>
+
+    <main className="max-w-5xl mx-auto py-12 px-4">
+      {/* Guidelines & Technical Resources */}
+      <section className="mb-10">
+        <h2 className="text-2xl font-semibold mb-4 text-blue-700">Guidelines & Technical Resources</h2>
+        <ul className="space-y-3">
+          <li className="bg-blue-50 rounded p-4 flex items-center justify-between">
+            <span>HEFMA Facility Maintenance Guidelines (2025)</span>
+            <a href="#" className="bg-blue-700 text-white px-4 py-2 rounded shadow hover:bg-blue-800 transition">Download PDF</a>
+          </li>
+          <li className="bg-blue-50 rounded p-4 flex items-center justify-between">
+            <span>Energy & Sustainability Best Practices</span>
+            <a href="#" className="bg-blue-700 text-white px-4 py-2 rounded shadow hover:bg-blue-800 transition">Download PDF</a>
+          </li>
         <li className="bg-white shadow rounded-lg p-4">
           <div className="font-bold text-lg">2025 Annual Industry Report</div>
           <div className="text-blue-500">PDF | Released: May 2025</div>
@@ -54,6 +85,8 @@ const Publications = () => (
       </form>
     </section>
   </main>
-);
+  </>
+  );
+}
 
 export default Publications;
