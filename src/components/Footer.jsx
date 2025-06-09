@@ -4,11 +4,11 @@ const Footer = () => (
   <footer className="bg-blue-900 text-gray-100 pt-10 pb-4 mt-12 border-t border-blue-800">
     <div className="max-w-7xl mx-auto px-4">
       <div className="flex flex-col md:flex-row md:justify-between gap-8">
-        {/* About HEFMA */}
+        {/* About HEFMA-EA */}
         <div className="flex-1 mb-6 md:mb-0">
-          <h3 className="font-bold text-lg text-green-400 mb-2">About HEFMA</h3>
+          <h3 className="font-bold text-lg text-green-400 mb-2">About HEFMA-EA</h3>
           <p className="text-gray-200 text-sm">
-            The Hospitality Engineers & Facilities Management Association (HEFMA) is dedicated to advancing the profession, supporting members, and promoting excellence in hospitality engineering and facilities management across the region.
+            The Hospitality Engineers & Facilities Management Association (HEFMA-EA) is dedicated to advancing the profession, supporting members, and promoting excellence in hospitality engineering and facilities management across the region.
           </p>
         </div>
         {/* Quick Links */}
@@ -51,10 +51,10 @@ const Footer = () => (
       </div>
       <div className="border-t border-blue-800 mt-8 pt-4 flex flex-col md:flex-row md:justify-between items-center text-sm text-gray-400">
         <div>
-          &copy; {new Date().getFullYear()} <span className="font-semibold text-green-400">HEFMA</span>. All rights reserved.
+          &copy; {new Date().getFullYear()} <span className="font-semibold text-green-400">HEFMA-EA</span>. All rights reserved.
         </div>
         <div className="mt-2 md:mt-0">
-          Designed & developed by HEFMA Web Team.
+          Designed & developed by HEFMA-EA Web Team.
         </div>
       </div>
     </div>

@@ -21,8 +21,8 @@ const Header = () => {
     <header className="bg-blue-900 shadow-md sticky top-0 z-50">
       <div className="max-w-7xl mx-auto flex items-center justify-between px-4 py-3">
         <div className="flex items-center space-x-2">
-          <img src={logo} alt="HEFMA Logo" className="h-10 w-auto object-contain" />
-          <span className="font-bold text-2xl text-white ml-2">HEFMA</span>
+          <img src={logo} alt="HEFMA-EA Logo" className="h-10 w-auto object-contain" />
+          <span className="font-bold text-2xl text-white ml-2">HEFMA-EA</span>
         </div>
         {/* Desktop Nav */}
         <nav className="space-x-6 hidden md:flex items-center">
