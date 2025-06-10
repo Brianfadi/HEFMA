@@ -26,9 +26,11 @@ const Contact = () => {
     <section className="mb-10">
       <h2 className="text-2xl font-bold text-blue-700 mb-4">Contact Information</h2>
       <div className="bg-white rounded-lg shadow p-6 mb-4">
-        <div className="mb-2"><span className="font-semibold">Address:</span> 123 HEFMA Avenue, Nairobi, Kenya</div>
-        <div className="mb-2"><span className="font-semibold">Phone:</span> +254 700 000 000</div>
-        <div className="mb-2"><span className="font-semibold">Email:</span> <a href="mailto:info@hefma.org" className="text-blue-700 underline">info@hefma.org</a></div>
+        <div className="mb-2"><span className="font-semibold">Registered Office:</span> NAIROBI, 289, KIJABE STREET</div>
+        <div className="mb-2"><span className="font-semibold">Postal Address:</span> 471426, Nairobi GPO 00100</div>
+        <div className="mb-2"><span className="font-semibold">Chairperson:</span> <a href="mailto:ategowere@yahoo.com" className="text-blue-700 underline">ategowere@yahoo.com</a> | <a href="tel:+254742183992" className="text-blue-700 underline">+254742183992</a></div>
+        <div className="mb-2"><span className="font-semibold">Treasurer:</span> <a href="mailto:oyugaemm@gmail.com" className="text-blue-700 underline">oyugaemm@gmail.com</a> | <a href="tel:+254720498895" className="text-blue-700 underline">+254720498895</a></div>
+        <div className="mb-2"><span className="font-semibold">Secretary:</span> <a href="mailto:kangaimbaya@gmail.com" className="text-blue-700 underline">kangaimbaya@gmail.com</a> | <a href="tel:+254721310699" className="text-blue-700 underline">+254721310699</a></div>
         <div className="flex gap-4 mt-2">
           <a href="#" className="text-blue-700 hover:text-blue-900">Twitter</a>
           <a href="#" className="text-blue-700 hover:text-blue-900">LinkedIn</a>
@@ -56,7 +58,7 @@ const Contact = () => {
 
     {/* Call to Action */}
     <div className="flex justify-center mt-8">
-      <a href="mailto:info@hefma.org" className="bg-green-700 text-white px-8 py-3 rounded font-semibold shadow hover:bg-green-800 transition">Email Us</a>
+      <a href="mailto:ategowere@yahoo.com" className="bg-green-700 text-white px-8 py-3 rounded font-semibold shadow hover:bg-green-800 transition">Email Chairperson</a>
     </div>
 
     <form className="bg-white shadow rounded-lg p-6 space-y-4">
@@ -74,27 +76,7 @@ const Contact = () => {
       </div>
       <button type="submit" className="bg-blue-700 text-white px-6 py-2 rounded hover:bg-blue-800 transition">Send Message</button>
     </form>
-    <div className="mt-8 text-center">
-      <div className="mb-2">Or email us at <a href="mailto:info@hefma.org" className="text-blue-700 underline">info@hefma.org</a></div>
-      <div className="mb-2">Nairobi, Kenya</div>
-    </div>
-    <div className="mt-8">
-      <h2 className="text-2xl font-bold mb-4">Association Info</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
-    </div>
-    <div className="mt-8">
-      <h2 className="text-2xl font-bold mb-4">Quick Links</h2>
-      <ul>
-        <li><a href="/events" className="text-blue-700 underline">Events</a></li>
-        <li><a href="/about" className="text-blue-700 underline">About</a></li>
-        <li><a href="/membership" className="text-blue-700 underline">Membership</a></li>
-      </ul>
-    </div>
-    <div className="mt-8">
-      <h2 className="text-2xl font-bold mb-4">Find Us</h2>
-      <div className="h-64 bg-gray-200 rounded-lg"></div>
-    </div>
+
   </main>
   </>
   );

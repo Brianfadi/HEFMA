@@ -57,7 +57,7 @@ const Publications = () => {
         <ul className="flex space-x-4 mb-4">
           <li><a href="/publications" className="text-blue-700 underline">All</a></li>
           <li><a href="/publications" className="text-blue-500">Safety Guidelines</a></li>
-          <li><a href="/publications" className="text-blue-500">Facility Management</a></li>
+          <li><a href="/publications" className="text-blue-500">Facility Managers</a></li>
           <li><a href="/publications" className="text-blue-500">Industry Reports</a></li>
         </ul>
       </div>
@@ -67,7 +67,7 @@ const Publications = () => {
           <a href="/publications" className="text-blue-700 underline">View PDF</a>
         </li>
         <li className="bg-gray-50 rounded-lg p-4">
-          <div className="font-bold">Facility Management Best Practices</div>
+          <div className="font-bold">Facility Managers Best Practices</div>
           <a href="/publications" className="text-blue-700 underline">View PDF</a>
         </li>
         <li className="bg-gray-50 rounded-lg p-4">

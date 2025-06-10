@@ -1,0 +1,56 @@
+.slide-in-left {
+  animation: slideInLeft 0.8s ease-out;
+}
+.slide-in-right {
+  animation: slideInRight 0.8s ease-out;
+}
+.slide-in-bottom {
+  animation: slideInBottom 0.8s ease-out;
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInBottom {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Optional: sliding effect on hover */
+.hover-slide-right:hover {
+  transform: translateX(12px);
+  transition: transform 0.3s cubic-bezier(0.4,0,0.2,1);
+}
+.hover-slide-left:hover {
+  transform: translateX(-12px);
+  transition: transform 0.3s cubic-bezier(0.4,0,0.2,1);
+}
+.hover-slide-up:hover {
+  transform: translateY(-10px);
+  transition: transform 0.3s cubic-bezier(0.4,0,0.2,1);
+}

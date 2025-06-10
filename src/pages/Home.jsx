@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import image10 from '../assets/image10.jpg';
 import image2 from '../assets/image2.jpg';
 import image3 from '../assets/image3.jpg';
@@ -9,6 +11,16 @@ console.log('image2:', image2);
 console.log('image3:', image3);
 
 const Home = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      once: false, // re-animate every time section enters viewport
+      mirror: true,
+      offset: 80,
+      easing: 'ease-out-cubic',
+    });
+  }, []);
+
   return (
     <main className="min-h-screen bg-white">
       {/* Hero Section */}
@@ -20,70 +32,69 @@ const Home = () => {
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',
         }}
+        data-aos="fade-up"
       >
       {/* Overlay */}
       <div className="absolute inset-0 bg-black bg-opacity-30 pointer-events-none" aria-hidden="true"></div>
       <div className="relative z-10">
-
-
-      <h1 className="text-4xl md:text-5xl font-bold mb-4">HEFMA - Hospitality Engineers & Facilities Management Association</h1>
-      <p className="max-w-2xl mx-auto text-lg md:text-xl mb-4">
-        Welcome to HEFMA, the registered professional association representing members across the hospitality and facilities management sectors. We bring together engineers, facility managers, hotel and hospitality operations experts, and service providers under one collaborative network to promote standards, education, innovation, and excellence in the built environment and hospitality infrastructure.
-      </p>
-      <div className="text-2xl md:text-3xl font-semibold italic text-green-300 mb-8">Connecting Expertise. Driving Excellence & Sustainable Solutions</div>
-      <div className="flex flex-col md:flex-row justify-center gap-4">
-        <a href="/events" className="inline-block bg-green-700 text-white px-6 py-3 rounded font-semibold shadow hover:bg-green-800 transition">Events</a>
-        <a href="/membership" className="inline-block bg-blue-700 text-white px-6 py-3 rounded font-semibold shadow hover:bg-blue-800 transition">Membership</a>
-        <a href="/blog" className="inline-block bg-gray-900 text-white px-6 py-3 rounded font-semibold shadow hover:bg-gray-800 transition">Latest Updates</a>
-      </div>
+        <h1 className="text-4xl md:text-5xl font-bold mb-4 transition duration-300 hover:text-green-500 hover:scale-105 cursor-pointer" data-aos="fade-right">HEFMA - Hospitality Engineers & Facilities Managers Association</h1>
+        <p className="max-w-2xl mx-auto text-lg md:text-xl mb-4 transition duration-300 hover:text-blue-700 hover:underline cursor-pointer" data-aos="fade-left">
+          Welcome to HEFMA, the registered professional association representing members across the hospitality and facilities management sectors. We bring together engineers, facility managers, hotel and hospitality operations experts, and service providers under one collaborative network to promote standards, education, innovation, and excellence in the built environment and hospitality infrastructure.
+        </p>
+        <div className="text-2xl md:text-3xl font-semibold italic text-green-300 mb-8 transition duration-300 hover:text-green-500 hover:scale-105 cursor-pointer" data-aos="fade-up">Connecting Expertise. Driving Excellence & Sustainable Solutions</div>
+        <div className="flex flex-col md:flex-row justify-center gap-4" data-aos="fade-up">
+          <a href="/events" className="inline-block bg-green-700 text-white px-6 py-3 rounded font-semibold shadow hover:bg-green-800 transition" data-aos="fade-up">Events</a>
+          <a href="/membership" className="inline-block bg-blue-700 text-white px-6 py-3 rounded font-semibold shadow hover:bg-blue-800 transition" data-aos="fade-up" data-aos-delay="100">Membership</a>
+          <a href="/blog" className="inline-block bg-gray-900 text-white px-6 py-3 rounded font-semibold shadow hover:bg-gray-800 transition" data-aos="fade-up" data-aos-delay="200">Latest Updates</a>
+        </div>
       </div>
     </section>
 
     {/* Featured Programs - Attractive Image Cards */}
-    <section className="max-w-6xl mx-auto py-12 px-4">
-      <h2 className="text-3xl font-bold text-blue-700 mb-8 text-center">Featured Programs</h2>
+    <section className="max-w-6xl mx-auto py-12 px-4" data-aos="fade-up">
+      <h2 className="text-3xl font-bold text-blue-700 mb-8 text-center transition duration-300 hover:text-green-600 hover:underline cursor-pointer" data-aos="fade-right">Featured Programs</h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {/* Card 1 */}
-        <div className="bg-white rounded-xl shadow-lg overflow-hidden group transition-transform transform hover:-translate-y-2 hover:shadow-2xl">
-          <img src={require('../assets/image1.jpg')} alt="Leadership Program" className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" />
+        <div className="bg-white rounded-xl shadow-lg overflow-hidden group transition-transform transform hover:-translate-y-2 hover:shadow-2xl" data-aos="fade-up">
+          <img src={require('../assets/image1.jpg')} alt="Leadership Program" className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" data-aos="zoom-in" />
           <div className="p-6">
-            <h3 className="text-xl font-bold mb-2 text-blue-700">Leadership Program</h3>
-            <p className="text-gray-700 mb-4">Empowering the next generation of facility leaders through workshops and mentorship.</p>
-            <a href="/events" className="inline-block bg-blue-700 text-white px-5 py-2 rounded font-semibold shadow hover:bg-blue-800 transition">Learn More</a>
+            <h3 className="text-xl font-bold mb-2 text-blue-700 transition duration-300 hover:text-green-600 hover:underline cursor-pointer" data-aos="fade-up">Leadership Program</h3>
+            <p className="text-gray-700 mb-4 transition duration-300 hover:text-blue-700 cursor-pointer" data-aos="fade-left">Empowering the next generation of facility leaders through workshops and mentorship.</p>
+            <a href="/events" className="inline-block bg-blue-700 text-white px-5 py-2 rounded font-semibold shadow hover:bg-blue-800 transition" data-aos="fade-up">Learn More</a>
           </div>
         </div>
         {/* Card 2 */}
-        <div className="bg-white rounded-xl shadow-lg overflow-hidden group transition-transform transform hover:-translate-y-2 hover:shadow-2xl">
-          <img src={require('../assets/image3.jpg')} alt="Innovation Hub" className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" />
+        <div className="bg-white rounded-xl shadow-lg overflow-hidden group transition-transform transform hover:-translate-y-2 hover:shadow-2xl" data-aos="fade-up" data-aos-delay="100">
+          <img src={require('../assets/image3.jpg')} alt="Innovation Hub" className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" data-aos="zoom-in" />
           <div className="p-6">
-            <h3 className="text-xl font-bold mb-2 text-blue-700">Innovation Hub</h3>
-            <p className="text-gray-700 mb-4">Explore the latest trends and technologies in hospitality engineering and management.</p>
-            <a href="/publications" className="inline-block bg-blue-700 text-white px-5 py-2 rounded font-semibold shadow hover:bg-blue-800 transition">Explore</a>
+            <h3 className="text-xl font-bold mb-2 text-blue-700 transition duration-300 hover:text-green-600 hover:underline cursor-pointer" data-aos="fade-up">Innovation Hub</h3>
+            <p className="text-gray-700 mb-4 transition duration-300 hover:text-blue-700 cursor-pointer" data-aos="fade-left">Explore the latest trends and technologies in hospitality engineering and management.</p>
+            <a href="/publications" className="inline-block bg-blue-700 text-white px-5 py-2 rounded font-semibold shadow hover:bg-blue-800 transition" data-aos="fade-up">Explore</a>
           </div>
         </div>
         {/* Card 3 */}
-        <div className="bg-white rounded-xl shadow-lg overflow-hidden group transition-transform transform hover:-translate-y-2 hover:shadow-2xl">
-          <img src={require('../assets/image4.jpg')} alt="Community Outreach" className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" />
+        <div className="bg-white rounded-xl shadow-lg overflow-hidden group transition-transform transform hover:-translate-y-2 hover:shadow-2xl" data-aos="fade-up" data-aos-delay="200">
+          <img src={require('../assets/image4.jpg')} alt="Community Outreach" className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" data-aos="zoom-in" />
           <div className="p-6">
-            <h3 className="text-xl font-bold mb-2 text-blue-700">Community Outreach</h3>
-            <p className="text-gray-700 mb-4">Making a difference through sustainability projects and community engagement.</p>
-            <a href="/blog" className="inline-block bg-blue-700 text-white px-5 py-2 rounded font-semibold shadow hover:bg-blue-800 transition">Get Involved</a>
+            <h3 className="text-xl font-bold mb-2 text-blue-700 transition duration-300 hover:text-green-600 hover:underline cursor-pointer" data-aos="fade-up">Community Outreach</h3>
+            <p className="text-gray-700 mb-4 transition duration-300 hover:text-blue-700 cursor-pointer" data-aos="fade-left">Making a difference through sustainability projects and community engagement.</p>
+            <a href="/blog" className="inline-block bg-blue-700 text-white px-5 py-2 rounded font-semibold shadow hover:bg-blue-800 transition" data-aos="fade-up">Get Involved</a>
           </div>
         </div>
       </div>
     </section>
 
     {/* Featured Event */}
-    <section className="max-w-3xl mx-auto mt-8 mb-8 px-4">
-      <div className="bg-white rounded-xl shadow-lg flex flex-col md:flex-row items-center p-6 gap-6 border-l-4 border-blue-700">
+    <section className="max-w-3xl mx-auto mt-8 mb-8 px-4" data-aos="fade-up">
+      <div className="bg-white rounded-xl shadow-lg flex flex-col md:flex-row items-center p-6 gap-6 border-l-4 border-blue-700" data-aos="fade-up">
         <div className="flex-1 text-left">
-          <h3 className="text-blue-700 font-bold text-lg mb-2">Featured Event</h3>
-          <div className="text-xl font-semibold mb-1">Annual General Meeting 2025</div>
-          <div className="text-gray-600 mb-2">September 10, 2025 &bull; Nairobi</div>
-          <p className="mb-2">Join us for our annual meeting with keynote speakers, workshops, and networking sessions.</p>
-          <a href="/events" className="text-blue-700 underline font-medium">Learn More</a>
+          <h3 className="text-blue-700 font-bold text-lg mb-2" data-aos="fade-right">Featured Event</h3>
+          <div className="text-xl font-semibold mb-1" data-aos="fade-left">Annual General Meeting 2025</div>
+          <div className="text-gray-600 mb-2" data-aos="fade-up">September 10, 2025 &bull; Nairobi</div>
+          <p className="mb-2" data-aos="fade-left">Join us for our annual meeting with keynote speakers, workshops, and networking sessions.</p>
+          <a href="/events" className="text-blue-700 underline font-medium" data-aos="fade-up">Learn More</a>
         </div>
-        <div className="hidden md:block">
+        <div className="hidden md:block" data-aos="zoom-in">
           <span className="inline-block bg-blue-500 text-blue-700 rounded-full px-4 py-2 font-semibold text-sm">Upcoming</span>
         </div>
       </div>

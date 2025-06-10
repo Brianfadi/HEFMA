@@ -15,6 +15,7 @@ import Advocacy from "./pages/Advocacy";
 import Community from "./pages/Community";
 import Partners from "./pages/Partners";
 import MemberPortal from "./pages/MemberPortal";
+import MemberLogin from "./pages/MemberLogin";
 
 const App = () => (
   <Router>
@@ -33,6 +34,7 @@ const App = () => (
         <Route path="/advocacy" element={<Advocacy />} />
         <Route path="/community" element={<Community />} />
         <Route path="/partners" element={<Partners />} />
+        <Route path="/memberlogin" element={<MemberLogin />} />
         <Route path="/memberportal" element={<MemberPortal />} />
       </Routes>
     </div>

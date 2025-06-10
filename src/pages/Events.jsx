@@ -1,26 +1,37 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 import image9 from '../assets/image9.jpg';
 import image14 from '../assets/image14.jpg';
 
-const Events = () => (
-  <>
-    <section
-      className="relative text-white py-16 px-4 text-center overflow-hidden"
-      style={{
-        backgroundImage: `url(${image9})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat'
+const Events = () => {
+  useEffect(() => {
+    AOS.init({ duration: 800, once: false, mirror: true, offset: 80, easing: 'ease-out-cubic' });
+  }, []);
+
+  return (
+    <>
+      <section
+        className="relative text-white py-16 px-4 text-center overflow-hidden"
+        style={{
+          backgroundImage: `url(${image9})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat'
+        }}
+        data-aos="fade-up"
+      >
       }}
+      data-aos="fade-up"
     >
     </section>
-    <main className="max-w-5xl mx-auto py-12 px-4">
-      <h1 className="text-3xl font-bold mb-6 text-blue-700">Events & Programs</h1>
+    <main className="max-w-5xl mx-auto py-12 px-4" data-aos="fade-up">
+      <h1 className="text-3xl font-bold mb-6 text-blue-700" data-aos="fade-right">Events & Programs</h1>
 
       {/* Annual Conference & Expo */}
-      <section className="mb-10">
-        <h2 className="text-2xl font-semibold mb-3">Annual HEFMA Conference & Expo</h2>
+      <section className="mb-10" data-aos="fade-up">
+        <h2 className="text-2xl font-semibold mb-3" data-aos="fade-right">Annual HEFMA Conference & Expo</h2>
         <div className="bg-blue-50 rounded-lg shadow p-6 mb-4">
           <div className="font-bold text-lg">HEFMA Annual Conference & Expo 2025</div>
           <div className="text-gray-600 mb-2">September 10-12, 2025 &bull; Nairobi</div>
@@ -30,8 +41,8 @@ const Events = () => (
       </section>
 
       {/* Upcoming Events */}
-      <section className="mb-10">
-        <h2 className="text-2xl font-semibold mb-3">Upcoming Events</h2>
+      <section className="mb-10" data-aos="fade-up">
+        <h2 className="text-2xl font-semibold mb-3" data-aos="fade-right">Upcoming Events</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           <div className="bg-white shadow rounded-lg p-4">
             <div className="font-bold text-lg">Annual General Meeting 2025</div>
@@ -39,7 +50,7 @@ const Events = () => (
             <div className="text-blue-700 mt-2">Join us for our annual meeting with keynote speakers, workshops, and networking sessions.</div>
           </div>
           <div className="bg-white shadow rounded-lg p-4">
-            <div className="font-bold text-lg">Facility Management Expo</div>
+            <div className="font-bold text-lg">Facility Managers Expo</div>
             <div className="text-gray-600">November 22, 2025 - Virtual</div>
             <div className="text-blue-700 mt-2">A virtual expo showcasing the latest innovations in facility management.</div>
           </div>
@@ -52,8 +63,8 @@ const Events = () => (
       </section>
 
       {/* Past Events */}
-      <section className="mb-10">
-        <h2 className="text-2xl font-semibold mb-3">Past Events</h2>
+      <section className="mb-10" data-aos="fade-up">
+        <h2 className="text-2xl font-semibold mb-3" data-aos="fade-right">Past Events</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div className="bg-gray-50 rounded-lg shadow p-4">
             <div className="font-bold">2024 Regional Workshop</div>
@@ -71,8 +82,8 @@ const Events = () => (
       </section>
 
       {/* Workshops & CPD Programs */}
-      <section className="mb-10">
-        <h2 className="text-2xl font-semibold mb-3">Workshops & CPD Programs</h2>
+      <section className="mb-10" data-aos="fade-up">
+        <h2 className="text-2xl font-semibold mb-3" data-aos="fade-right">Workshops & CPD Programs</h2>
         <ul className="list-disc list-inside text-gray-700 space-y-2 mb-4">
           <li>Skill-based volunteering opportunities</li>
           <li>Technical skills workshops</li>
@@ -81,8 +92,8 @@ const Events = () => (
       </section>
 
       {/* Regional Workshops & Seminars, Facility Tours, Webinars */}
-      <section className="mb-10">
-        <h2 className="text-2xl font-semibold mb-3">Regional Workshops, Facility Tours & Webinars</h2>
+      <section className="mb-10" data-aos="fade-up">
+        <h2 className="text-2xl font-semibold mb-3" data-aos="fade-right">Regional Workshops, Facility Tours & Webinars</h2>
         <ul className="list-disc list-inside text-gray-700 space-y-2 mb-4">
           <li>Regional workshops and seminars on current topics</li>
           <li>Facility tours and technical trainings</li>
@@ -91,8 +102,8 @@ const Events = () => (
       </section>
 
       {/* Calendar Placeholder */}
-      <section className="mb-10">
-        <h2 className="text-2xl font-semibold mb-3">Events Calendar</h2>
+      <section className="mb-10" data-aos="fade-up">
+        <h2 className="text-2xl font-semibold mb-3" data-aos="fade-right">Events Calendar</h2>
         <div className="bg-gray-100 rounded-lg p-6 text-center text-gray-600">[Calendar with filters for event type and location coming soon]</div>
       </section>
 
@@ -112,7 +123,7 @@ const Events = () => (
           </li>
           <li className="bg-blue-50 rounded p-4 shadow flex flex-col md:flex-row md:items-center justify-between">
             <div>
-              <div className="font-semibold">Facility Management Expo</div>
+              <div className="font-semibold">Facility Managers Expo</div>
               <div className="text-blue-500 text-sm">November 5, 2025 &bull; Mombasa</div>
             </div>
             <a href="#" className="text-blue-700 font-semibold hover:underline mt-2 md:mt-0">Details</a>
@@ -149,7 +160,7 @@ const Events = () => (
         </div>
       </section>
       <section>
-        <h2 className="text-2xl font-semibold mb-3">Image Gallery</h2>
+        <h2 className="text-2xl font-semibold mb-3" data-aos="fade-right">Image Gallery</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           <div className="bg-gray-50 rounded-lg p-4">
             <img src={require('../assets/image1.jpg')} alt="Event Gallery 1" className="w-full h-48 object-cover rounded" />
@@ -163,7 +174,7 @@ const Events = () => (
         </div>
       </section>
       <section className="mb-8">
-        <h2 className="text-2xl font-semibold mb-3">Past Events Archive</h2>
+        <h2 className="text-2xl font-semibold mb-3" data-aos="fade-right">Past Events Archive</h2>
         <ul className="space-y-4">
           <li className="bg-gray-50 rounded-lg p-4">
             <div className="font-bold">HEFMA Annual General Meeting 2024</div>
@@ -171,14 +182,14 @@ const Events = () => (
             <div>View event details and photos.</div>
           </li>
           <li className="bg-gray-50 rounded-lg p-4">
-            <div className="font-bold">Facility Management Conference 2023</div>
+            <div className="font-bold">Facility Managers Conference 2023</div>
             <div className="text-gray-600 text-sm">November 22, 2023 - Virtual</div>
             <div>View event details and presentations.</div>
           </li>
         </ul>
       </section>
       <section>
-        <h2 className="text-2xl font-semibold mb-3">Image Gallery</h2>
+        <h2 className="text-2xl font-semibold mb-3" data-aos="fade-right">Image Gallery</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           <div className="bg-gray-50 rounded-lg p-4">
             <img src={require('../assets/image1.jpg')} alt="Event Gallery 1" className="w-full h-48 object-cover rounded" />
@@ -192,7 +203,7 @@ const Events = () => (
         </div>
       </section>
     </main>
-  </>
-);
+  </>);
+};
 
 export default Events;

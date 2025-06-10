@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 
 const Footer = () => (
   <footer className="bg-blue-900 text-gray-100 pt-10 pb-4 mt-12 border-t border-blue-800">
@@ -8,30 +10,35 @@ const Footer = () => (
         <div className="flex-1 mb-6 md:mb-0">
           <h3 className="font-bold text-lg text-green-400 mb-2">About HEFMA-EA</h3>
           <p className="text-gray-200 text-sm">
-            The Hospitality Engineers & Facilities Management Association (HEFMA-EA) is dedicated to advancing the profession, supporting members, and promoting excellence in hospitality engineering and facilities management across the region.
+            The Hospitality Engineers & Facilities Managers Association (HEFMA-EA) is dedicated to advancing the profession, supporting members, and promoting excellence in hospitality engineering and facilities managers across the region.
           </p>
+          <div className="mt-4">
+            <img src={require('../assets/logo.jpg')} alt="HEFMA-EA Logo" className="max-w-[280px] w-full h-auto rounded shadow-md" />
+          </div>
         </div>
         {/* Quick Links */}
         <div className="flex-1 mb-6 md:mb-0">
           <h3 className="font-bold text-lg text-green-400 mb-2">Quick Links</h3>
           <ul className="space-y-1 text-sm">
-            <li><a href="/about" className="hover:text-green-300">About Us</a></li>
-            <li><a href="/membership" className="hover:text-green-300">Membership</a></li>
-            <li><a href="/events" className="hover:text-green-300">Events & Programs</a></li>
-            <li><a href="/publications" className="hover:text-green-300">Knowledge Hub</a></li>
-            <li><a href="/community" className="hover:text-green-300">Community</a></li>
-            <li><a href="/partners" className="hover:text-green-300">Partners</a></li>
-            <li><a href="/memberportal" className="hover:text-green-300">Member Portal</a></li>
-            <li><a href="/contact" className="hover:text-green-300">Contact</a></li>
+            <li><Link to="/about" className="hover:text-green-300">About Us</Link></li>
+            <li><Link to="/membership" className="hover:text-green-300">Membership</Link></li>
+            <li><Link to="/events" className="hover:text-green-300">Events & Programs</Link></li>
+            <li><Link to="/publications" className="hover:text-green-300">Knowledge Hub</Link></li>
+            <li><Link to="/community" className="hover:text-green-300">Community</Link></li>
+            <li><Link to="/partners" className="hover:text-green-300">Partners</Link></li>
+            <li><Link to="/memberlogin" className="hover:text-green-300">Member Portal</Link></li>
+            <li><Link to="/contact" className="hover:text-green-300">Contact</Link></li>
           </ul>
         </div>
         {/* Contact Info */}
         <div className="flex-1 mb-6 md:mb-0">
           <h3 className="font-bold text-lg text-green-400 mb-2">Contact</h3>
           <ul className="text-sm text-gray-200 space-y-1">
-            <li><span className="font-semibold">Address:</span> Nairobi, Kenya</li>
-            <li><span className="font-semibold">Email:</span> <a href="mailto:info@hefma.org" className="hover:text-green-300">info@hefma.org</a></li>
-            <li><span className="font-semibold">Phone:</span> <a href="tel:+254700000000" className="hover:text-green-300">+254 700 000000</a></li>
+            <li><span className="font-semibold">Registered Office:</span> NAIROBI, 289, KIJABE STREET</li>
+            <li><span className="font-semibold">Postal Address:</span> 471426, Nairobi GPO 00100</li>
+            <li><span className="font-semibold">Chairperson:</span> <a href="mailto:ategowere@yahoo.com" className="hover:text-green-300">ategowere@yahoo.com</a> | <a href="tel:+254742183992" className="hover:text-green-300">+254742183992</a></li>
+            <li><span className="font-semibold">Treasurer:</span> <a href="mailto:oyugaemm@gmail.com" className="hover:text-green-300">oyugaemm@gmail.com</a> | <a href="tel:+254720498895" className="hover:text-green-300">+254720498895</a></li>
+            <li><span className="font-semibold">Secretary:</span> <a href="mailto:kangaimbaya@gmail.com" className="hover:text-green-300">kangaimbaya@gmail.com</a> | <a href="tel:+254721310699" className="hover:text-green-300">+254721310699</a></li>
           </ul>
           <div className="flex space-x-4 mt-3">
             <a href="https://facebook.com/hefma" className="hover:text-green-400" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
